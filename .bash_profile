@@ -11,8 +11,13 @@ function gc () { gcc ${1%.*}.c && ./a.out ; }
 function gp () { g++ ${1%.*}.cc && ./a.out ; }
 
 # silence bash warning
-
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# golang
+# export GOROOT=/usr/local/Cellar/go
+unset GOROOT
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin
 
 # command prompt
 # ref:
@@ -25,7 +30,6 @@ export PS1="[\u] \e[0;32m\w\e[m \e[0;33m(${AWS_PROFILE})\e[m \n$ "
 
 # common aliases and links
 
-ln -sf nvim nv
 alias awsp="source _awsp"
 alias py='python3'
 alias pp='python3 -m pip'
@@ -35,6 +39,7 @@ alias ll='ls -alF'
 alias gs='git status'
 alias gp='git pull'
 alias gpush='git push'
+alias gcm='git commit -m'
 alias samo='cd ~/samo'
 alias njit='cd ~/njit/f20'
 
