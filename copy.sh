@@ -1,10 +1,7 @@
 
-# bash profile
-cp ./.bash_profile ~/.bash_profile
-
-# bash profile
-cp ./.vimrc ~/.vimrc
-
-
-# TODO:
-# find all dotfiles, iterate over, copying to home dir ~/.
+shopt -s nullglob
+for i in `find . -type f -name ".*"`;
+do
+  cp $i ~/.
+  echo copied $i to ~/$i
+done
