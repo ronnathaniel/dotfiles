@@ -4,6 +4,10 @@
 
 function title () { echo -e "\033]0;${1:?please specify a title}\007" ; }
 
+function parse_git_branch() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 function jc () { javac ${1%.*}.java && java ${1%.*} ; }
 
 function gc () { gcc ${1%.*}.c && ./a.out ; }
@@ -25,8 +29,9 @@ export PATH=$PATH:$GOROOT/bin
 # \w 			= path
 # \e[0/1;30/.../36m 	= start color
 # \e[m 			= stop color
+# https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt 
 
-export PS1="[\u] \e[0;32m\w\e[m \e[0;33m(${AWS_PROFILE})\e[m \n$ "
+export PS1="[\u] \e[0;32m\w\e[m \e[0;33m(${AWS_PROFILE})\e[m:\e[0;130m\$(parse_git_branch)\e[m \n$ "
 
 # common aliases and links
 
