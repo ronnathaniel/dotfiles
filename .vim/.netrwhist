@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/rnath/samo/webshop/util'
+let g:netrw_dirhist_2='/Users/rnath/njit/f20/cs301/CS301/deliverables'
+let g:netrw_dirhist_1='/Users/rnath/go/src/github.com/ronnathaniel/blockchain-network/net'
+let g:netrw_dirhist_0='/Users/rnath/njit/f20/cs301/p/.git/info'
+let g:netrw_dirhist_9='/Users/rnath/njit/f20/cs301/p/.git'
+let g:netrw_dirhist_8='/usr/local/Cellar/go/1.15.2/libexec/src/sync'
+let g:netrw_dirhist_7='/Users/rnath/Library/Arduino15/cache/downloads.arduino.cc/packages'
+let g:netrw_dirhist_6='/Users/rnath/Library/Arduino15/cache/downloads.arduino.cc'
+let g:netrw_dirhist_5='/Users/rnath/Library/Arduino15/cache/downloads.arduino.cc/libraries'
+let g:netrw_dirhist_4='/Users/rnath/Library/Arduino15/cache/downloads.arduino.cc'
