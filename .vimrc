@@ -1,4 +1,7 @@
 
+execute pathogen#infect()
+
+colo gruvbox
 syntax enable
 
 filetype on
