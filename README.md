@@ -13,6 +13,14 @@ copy all files to local env
     $ cd dotfiles
     $ ./copy.sh
 
+## usage
+
+note that this vim profile uses plugins picked up by Pathogen. Any plugins should be cloned to .vim/bundle/, to be automatically picked up by Pathogen on vi/m startup (every startup).
+
+## technology
+
+ - [Vim-Pathogen](https://github.com/tpope/vim-pathogen) - "super easy to install plugins and runtime files in their own private directories"
+
 ## development
 
 create PRs named off their purposes to be merged into `main`
