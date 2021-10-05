@@ -2,8 +2,7 @@
 execute pathogen#infect()
 
 colo gruvbox
-syntax enable
-
+syntax on
 filetype on
 filetype off
 filetype plugin indent on
