@@ -35,6 +35,7 @@ export PS1="[\u] \e[0;32m\w\e[m \e[0;33m(${AWS_PROFILE})\e[m:\e[0;130m\$(parse_g
 
 # common aliases and links
 
+eval "$(thefuck --alias)"
 alias awsp="source _awsp"
 alias py='python3'
 alias pp='python3 -m pip'
